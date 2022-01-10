@@ -1,17 +1,20 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
-const navBar = () => {
+const NavBar = () => {
   return (
-    <div>
+    <navbar className=''>
       <Link href='/'>
         <a>Home</a>
       </Link>
       <Link href='/dashboard'>
         <a>Dashboard</a>
       </Link>
-    </div>
-  );
-};
+      <Link href='/about'>
+        <a>About</a>
+      </Link>
+    </navbar>
+  )
+}
 
-export default navBar;
+export default NavBar
